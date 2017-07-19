@@ -1,0 +1,198 @@
+{
+    "ANNOTATION_TYPE": "String",
+    "clinicalTrial": {
+        "ANNOTATION_TYPE": "String",
+        "nctCode": "String",
+        "nctCodeDisabled": "Boolean",
+        "label": "String",
+        "randomization": "String",
+        "info": "String"
+    },
+    "diagnoses": [
+        {
+            "ANNOTATION_TYPE": "String",
+            "name": "String",
+            "icd10codes": [
+                "String"
+            ],
+            "meshTerms": [
+                "String"
+            ],
+            "grade": "String",
+            "stage": "String"
+        }
+    ],
+    "therapies": [
+        {
+            "ANNOTATION_TYPE": "String",
+            "label": "String",
+            "therapyType": "String",
+            "experimentalDrugs": [
+                {
+                    "name": "String",
+                    "route": "String",
+                    "dosage": {
+                        "value": "Number",
+                        "units": "String",
+                        "valueFrom": "Number",
+                        "valueTo": "Number"
+                    },
+                    "frequency": "String",
+                    "cycleLength": "String",
+                    "cycleCount": "Number",
+                    "info": "String"
+                }
+            ],
+            "doseEscalationDrug": {
+                "name": "String",
+                "route": "String",
+                "dosage": {
+                    "value": "Number",
+                    "units": "String",
+                    "valueFrom": "Number",
+                    "valueTo": "Number"
+                },
+                "frequency": "String",
+                "cycleLength": "String",
+                "cycleCount": "Number",
+                "info": "String"
+            },
+            "drugCombination": {
+                "name": "String",
+                "info": "String"
+            },
+            "noTherapyObservation": {
+                "info": "String"
+            },
+            "undefinedTherapy": {
+                "info": "String"
+            }
+        }
+    ],
+    "studyGroups": [
+        {
+            "ANNOTATION_TYPE": "String",
+            "label": "String",
+            "diagnoses": [
+                {
+                    "diagnosisId": "String",
+                    "count": "Number"
+                }
+            ],
+            "therapyId": "String",
+            "numberOfPatients": "Number",
+            "subGroupOf": "String",
+            "anthropometricCharacteristics": {
+                "male": {
+                    "label": "String",
+                    "count": "Number",
+                    "percent": "Number"
+                },
+                "female": {
+                    "label": "String",
+                    "count": "Number",
+                    "percent": "Number"
+                },
+                "yearRange": "String",
+                "yearMedian": "String"
+            },
+            "clinicalCharacteristics": {
+                "priorTherapy": "String",
+                "stageTnmTCategories": [
+                    {
+                        "label": "String",
+                        "count": "int",
+                        "percent": "double"
+                    }
+                ],
+                "stageTnmNCategories": [
+                    {
+                        "label": "String",
+                        "count": "Number",
+                        "percent": "Number"
+                    }
+                ],
+                "stageTnmMCategories": [
+                    {
+                        "label": "String",
+                        "count": "Number",
+                        "percent": "Number"
+                    }
+                ],
+                "stageNotTnmCategories": [
+                    {
+                        "label": "String",
+                        "count": "Number",
+                        "percent": "Number"
+                    }
+                ],
+                "grades": [
+                    {
+                        "label": "String",
+                        "count": "Number",
+                        "percent": "Number"
+                    }
+                ],
+                "performanceStatus": [
+                    {
+                        "type": "String",
+                        "scale": "String",
+                        "count": "Number",
+                        "percent": "Number"
+                    }
+                ],
+                "score": [
+                    {
+                        "type": "String",
+                        "scale": "String",
+                        "count": "Number",
+                        "percent": "Number"
+                    }
+                ]
+            },
+            "measuredParameters": [
+                {
+                    "label": "String",
+                    "units": "String",
+                    "localization": "String",
+                    "method": "String",
+                    "range": {
+                        "label": "String",
+                        "count": "Number",
+                        "percent": "Number"
+                    }
+                }
+            ]
+        }
+    ],
+    "outcomes": [
+        {
+            "ANNOTATION_TYPE": "String",
+            "label": "String",
+            "studyGroupId": "String",
+            "therapyId": "String",
+            "measures": [
+                {
+                    "label": "String",
+                    "percent": "String",
+                    "time": "String",
+                    "median": "String"
+                }
+            ]
+        }
+    ],
+    "adverseEvents": [
+        {
+            "ANNOTATION_TYPE": "String",
+            "label": "String",
+            "studyGroupId": "String",
+            "therapyId": "String",
+            "adverseEventType": "String",
+            "grade": "String",
+            "count": {
+                "count": "Number",
+                "percent": "Number"
+            }
+        }
+    ]
+}
