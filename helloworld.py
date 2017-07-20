@@ -12,4 +12,4 @@
 # как првоерить версию?
 # python --version
 
-print('helloworld')
+print('helloworld, Yafa')
